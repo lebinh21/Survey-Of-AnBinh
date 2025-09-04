@@ -14,9 +14,8 @@ public class User implements Serializable {
 
     public User() {}
 
-    public User(String firstName, String lastName, String email,
-                String dateOfBirth, String heardFrom,
-                boolean wantsUpdates, boolean emailOK, String contactVia) {
+    public User(String firstName, String lastName, String email, String dateOfBirth,
+                String heardFrom, boolean wantsUpdates, boolean emailOK, String contactVia) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

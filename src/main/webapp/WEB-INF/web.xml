@@ -11,7 +11,6 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
 
-  <!-- Mapping servlet -->
   <servlet>
     <servlet-name>SurveyServlet</servlet-name>
     <servlet-class>murach.survey.SurveyServlet</servlet-class>

@@ -13,7 +13,6 @@ public class SurveyServlet extends HttpServlet {
                           HttpServletResponse response)
                           throws ServletException, IOException {
         
-        // Đảm bảo request đọc UTF-8
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html; charset=UTF-8");
 
@@ -43,7 +42,7 @@ public class SurveyServlet extends HttpServlet {
             User user = new User(firstName, lastName, email, dateOfBirth,
                                  heardFrom, wantsUpdates, emailOK, contactVia);
 
-            // Lưu vào request
+            // Gửi sang JSP
             request.setAttribute("user", user);
 
             url = "/thanks.jsp";
